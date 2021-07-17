@@ -3,7 +3,7 @@ resources:
     type: git
     icon: github
     source:
-      uri: https://github.com/anilmaharjan87/testd
+      uri: https://github.com/anilmaharjan87/test
       branch: master
 jobs:
   - name: job-hello-world
