@@ -1,0 +1,15 @@
+resources:
+  - name: git-project
+    type: git
+    icon: github
+    source:
+      uri: https://github.com/anilmaharjan87/test
+      branch: master
+jobs:
+  - name: job-hello-world
+    public: true
+    plan:
+      - get: git-project
+        trigger: true
+      - set_pipeline: hello-world
+        file: git-project/pipeline.yml
